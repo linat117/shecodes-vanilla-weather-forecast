@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="css/index.css" rel="stylesheet" />
-     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Vanilla Weather Application</title>
   </head>
   <body>
@@ -25,33 +25,43 @@
         <div class="first-row">
           <div class="left">
             <p><strong id="country"></strong></p>
-            <p class="left-p" id="date"> <span></span></p>
+            <p class="left-p" id="date"><span></span></p>
           </div>
           <div class="right">
-    <div id="image" class="weather-icon"></div>
-    <div class="temp-block">
-      <div class="weather-temperature" id="temp"></div>
-      <div class="weather-unit">°C</div>
-    </div>
-  </div>
-        <div class="second-row">
-          <div class="humidity">
-            <span >Humidity</span> <br />
-            <span id="humidity"></span>
+            <div id="image" class="weather-icon"></div>
+            <div class="temp-block">
+              <div class="weather-temperature" id="temp"></div>
+              <div class="weather-unit">°C</div>
+            </div>
           </div>
-          <div class="wind">
-            <span>Wind</span> <br />
-            <span id="wind"></span>
-          </div>
-          <div class="detail">
-            <span>Status</span> <br />
-            <span id="description"></span>
+          <div class="second-row">
+            <div class="humidity">
+              <span>Humidity</span> <br />
+              <span id="humidity"></span>
+            </div>
+            <div class="wind">
+              <span>Wind</span> <br />
+              <span id="wind"></span>
+            </div>
+            <div class="detail">
+              <span>Status</span> <br />
+              <span id="description"></span>
+            </div>
           </div>
         </div>
-        <div>
-          <p>This project was coded by <a href="https://github.com/linat117/">Hilina Teshome</a> is <a href="https://github.com/linat117/SheCode-vanilla-weather-app">open-sourced on Github</a> and <a href="https://vanillweatherapp.netlify.app/">hosted on Netlify.</a></p>
-        </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
+      <div>
+        <p>
+          This project was coded by
+          <a href="https://github.com/linat117/">Hilina Teshome</a> is
+          <a href="https://github.com/linat117/SheCode-vanilla-weather-app"
+            >open-sourced on Github</a
+          >
+          and
+          <a href="https://vanillweatherapp.netlify.app/">hosted on Netlify.</a>
+        </p>
+      </div>
     </div>
     <script src="js/index.js"></script>
   </body>
